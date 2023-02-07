@@ -154,14 +154,36 @@ button {
 				<button class="project_button" onclick="window.location.href='./resume.pdf'">Resume</button>
 			</center>
 		</div>
+		
 		<div class="about_me_div">
-			<h2>About Me</h2>
+			<h2>PyroResearch</h2>
+		</div><br>
+		<center><a href="https://github.com/BAPCon/proresearch">GitHub Repository</a></center><br><br>
+		<div style="width:34%;margin:auto">
+			<center>
+			<img src="pyrosearchthumbnail.png" style="margin:auto;width:70%;box-shadow: 1px 0px 13px #888888;">
+			</center>
+			<h4>Purpose</h4>
+			<p>ChatGPT has been controversial lately due to its likely use for academic dishonesty in the form of AI generated essays. This project seeks
+				 a middleground approach by generating research "packages" for users.
+			</p>
+			<p>After entering a topic, like World War 2, a "package" containing the key points, important followup questions, and possible theses for an essay is generated.</p>
+			<h4>Approach</h4>
+			<p>
+				A number of queries for ChatGPT were identified like "What are the 5 most important aspects of [topic]". By adding "as a list" to the query, it is easy to parse the response into an array/list.
+			</p><br><br>
+			<center><img src="ex1.png" style="margin:auto;width:70%;box-shadow: 1px 0px 13px #888888;"></center><br>
+			<p>Outside of the essay topics, each query is sent individually, without the prior conversation included to avoid reinforcing any tainted responses.</p>
+			<p>The prior conversations are included when querying essay topics, to add better context.</p>
+			<br><br>
+			<center><img src="ex2.png" style="margin:auto;width:70%;box-shadow: 1px 0px 13px #888888;"></center><br>
+			<h4>Media</h4>
+			<p>Non-copyrighted images are found by querying Wikimedia Commons backend, and license unspecified images are found with ScaleSerp.com's API.</p>
+			<center><img src="ex3.png" style="margin:auto;width:70%;box-shadow: 1px 0px 13px #888888;"></center><br>
+			<p>Youtube videos are found using the 'youtubesearchpython' package, which works shockingly well without getting Google Cloud involved.</p>
+			<center><img src="ex4.png" style="margin:auto;width:70%;box-shadow: 1px 0px 13px #888888;"></center>
+			<br><br>
 		</div>
-		<center>
-		<div style="width:34%;">
-			<p>I'm a software developer and musician currently studying at Florida International University in Miami, Florida. <br><br>I've worked with a variety of teams with diverse goals like automating marketing funnels on HubSpot, developing Discord bots, scraping news articles, and building management dashboards for internal processes. Turning plaintext needs into action and results is inspiring to me, some of my most memorable work memories were with clients with zero tech experience.<br><br>In my freetime, I love exploring the intersection of music and programming, my two biggest hobbies. </p>
-		</div>
-	</center>
 		<br>
 		
 	</body>

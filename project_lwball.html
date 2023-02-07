@@ -155,13 +155,43 @@ button {
 			</center>
 		</div>
 		<div class="about_me_div">
-			<h2>About Me</h2>
+			<h2>Lightweight Ballistics</h2>
+		</div><br>
+		<center><a href="https://github.com/BAPCon/proresearch">GitHub Repository</a></center>
+		<br><br>
+		<div style="width:34%;margin:auto">
+			<h4>Purpose</h4>
+			<p>Semi-realistic projectile physics is seen a number of video games, including the Arma line of games and the Battlefield series. 
+				Aspects like bulletdrop and changes in the velocity of the projectile add to the realism and immersion of a game, but can come at the cost of 
+				being resource-intensive to simulate.
+			</p>
+			<p>
+				This Unity package, programmed in C#, can simulate or emulate the ballistics of thousands of projectiles without the use of rigidbodies.
+			</p>
+			<h4>Approach</h4>
+			<p>
+				Large amounts of data related to the ballistics of popular firearm cartridges can be found publicly. Both theoretical values and actual test data exist,
+				but by interfacing with a ballistics calculator we can "pre-render" expected effects on a specific bullet.
+			</p>
+			<p>
+				<a href="https://gundata.org">GunData.Org</a> is
+				one source of ballistics data, and their ballistics calculator was used for this pre-rendering step. A number of popular firearm cartridges ballistics
+				were calculated at various distances, in increments of 20 meters.
+			</p>
+			<h4>Aspects</h4>
+			<ol>
+				<li>By taking the projectiles distance travelled, the starting angle of the muzzle, and the ballistics profile of the projectile, we can ascertain the velocity and vertical drop.</li>
+				<li>By interpolating between the velocity and vertical drop of two points of data (like 20 meters and 40 meters), an inexact but sufficient and <em>efficient</em> value can be found.</li>
+				<li>The only call to the physics engine is for raycasting hits, with the frequency of casts and hit distance variable.</li>
+				<li>Realistic trajectories can be simulated for thousands of projectiles without rigidbodies.</li>
+			</ol>
+			<br>
+			<br>
+			<br>
+			<p>
+				
+			</p>
 		</div>
-		<center>
-		<div style="width:34%;">
-			<p>I'm a software developer and musician currently studying at Florida International University in Miami, Florida. <br><br>I've worked with a variety of teams with diverse goals like automating marketing funnels on HubSpot, developing Discord bots, scraping news articles, and building management dashboards for internal processes. Turning plaintext needs into action and results is inspiring to me, some of my most memorable work memories were with clients with zero tech experience.<br><br>In my freetime, I love exploring the intersection of music and programming, my two biggest hobbies. </p>
-		</div>
-	</center>
 		<br>
 		
 	</body>
