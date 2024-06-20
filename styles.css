@@ -9,8 +9,8 @@ body {
 }
 
 .intro-panel {
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 900px;
     background: #ffffff;
     border: 1px solid #dddddd;
     border-radius: 10px;
@@ -29,6 +29,12 @@ h2 {
     font-size: 20px;
     color: #444444;
     margin-bottom: 10px;
+}
+
+.study-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .section p {
